@@ -1,2 +1,3 @@
 # interest-calculator
-Interest Calculator (bulgarian) developed for my father
+Interest Calculator (bulgarian) developed for my father using Swing
+
