@@ -1,4 +1,4 @@
-package instrumenti;
+package bg.alexander.lihva.instrumenti;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

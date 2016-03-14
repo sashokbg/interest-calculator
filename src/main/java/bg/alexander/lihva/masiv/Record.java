@@ -1,4 +1,4 @@
-package masiv;
+package bg.alexander.lihva.masiv;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;

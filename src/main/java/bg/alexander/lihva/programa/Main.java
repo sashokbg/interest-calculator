@@ -1,4 +1,4 @@
-package programa;
+package bg.alexander.lihva.programa;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.Calendar;
@@ -6,7 +6,7 @@ import java.util.Date;
 
 import javax.swing.JFrame;
 
-import userInterface.Window;
+import bg.alexander.lihva.userInterface.Window;
 
 
 public class Main {
@@ -23,13 +23,10 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
-		
-		
 		Window frame = new Window();
 		
 		frame.init();
-		frame.setSize(400, 450);
+		frame.setSize(600, 450);
 		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		

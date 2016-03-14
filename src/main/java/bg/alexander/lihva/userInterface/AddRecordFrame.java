@@ -1,9 +1,4 @@
-package userInterface;
-
-import instrumenti.CheckDate;
-import instrumenti.DateDifference;
-import instrumenti.FixDateString;
-import instrumenti.Numbers;
+package bg.alexander.lihva.userInterface;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -27,8 +22,12 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import masiv.Record;
-import masiv.WriteMasiv;
+import bg.alexander.lihva.instrumenti.CheckDate;
+import bg.alexander.lihva.instrumenti.DateDifference;
+import bg.alexander.lihva.instrumenti.FixDateString;
+import bg.alexander.lihva.instrumenti.Numbers;
+import bg.alexander.lihva.masiv.Record;
+import bg.alexander.lihva.masiv.WriteMasiv;
 
 public class AddRecordFrame extends JFrame implements ActionListener,FocusListener,KeyListener{
 

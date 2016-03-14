@@ -1,4 +1,4 @@
-package userInterface;
+package bg.alexander.lihva.userInterface;
 
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;

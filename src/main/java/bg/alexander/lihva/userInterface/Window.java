@@ -1,7 +1,4 @@
-package userInterface;
-
-import instrumenti.DateDifference;
-import instrumenti.FixDateString;
+package bg.alexander.lihva.userInterface;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -29,16 +26,14 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 
-import masiv.ReadMasiv;
-import masiv.Record;
-import masiv.Search;
-import programa.Configuration;
+import bg.alexander.lihva.instrumenti.DateDifference;
+import bg.alexander.lihva.instrumenti.FixDateString;
+import bg.alexander.lihva.masiv.ReadMasiv;
+import bg.alexander.lihva.masiv.Record;
+import bg.alexander.lihva.masiv.Search;
+import bg.alexander.lihva.programa.Configuration;
 
 public class Window extends JFrame implements ActionListener,FocusListener{
-
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 8949945076887597904L;
 	
 	private String filePath=Configuration.getPath(); //Default file path. Can be changed from the menu.

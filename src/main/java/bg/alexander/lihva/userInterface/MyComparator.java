@@ -1,8 +1,8 @@
-package userInterface;
+package bg.alexander.lihva.userInterface;
 
 import java.util.Comparator;
 
-import masiv.Record;
+import bg.alexander.lihva.masiv.Record;
 
 public class MyComparator implements Comparator<Record>{
 

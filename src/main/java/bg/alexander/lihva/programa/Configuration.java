@@ -1,4 +1,4 @@
-package programa;
+package bg.alexander.lihva.programa;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,27 +11,21 @@ import java.util.Scanner;
 public class Configuration {
 
 	public static void writePath(String path){
-		// TODO Auto-generated method stub
-		
 		File f= new File("lihva.cfg");
 		
 		if(!f.exists())
 			try {
 				f.createNewFile();
 			} catch (IOException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
-		
 		try {
 			BufferedWriter w = new BufferedWriter(new FileWriter(f));
 			w.write("\""+path+"\"");
 			w.close();
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -39,9 +33,8 @@ public class Configuration {
 	@SuppressWarnings("finally")
 	public static String getPath(){
 		File f= new File("lihva.cfg");
-		
+		Scanner scan = null;
 		if(f.exists()){
-			Scanner scan;
 			try {
 				scan = new Scanner(f);
 				scan.useDelimiter("\"");
@@ -49,11 +42,14 @@ public class Configuration {
 				return toReturn;
 			}
 			catch (NoSuchElementException e1) {
-				// TODO Auto-generated catch block
 				return "LIHVA.TXT";
 			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
 				return "LIHVA.TXT";
+			}
+			finally {
+				if(scan!=null){
+					scan.close();
+				}
 			}
 		}
 		else{

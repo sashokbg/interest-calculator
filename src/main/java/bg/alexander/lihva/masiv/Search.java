@@ -1,13 +1,13 @@
-package masiv;
-
-import instrumenti.DateDifference;
-import instrumenti.Numbers;
+package bg.alexander.lihva.masiv;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Vector;
+
+import bg.alexander.lihva.instrumenti.DateDifference;
+import bg.alexander.lihva.instrumenti.Numbers;
 /**
  * Tozi klas se naricha Search, tai kato pretarsva vsichki korteji v masiva s lihvenite procenti i
  * opredelia vavedenia ot potrebitelia period, v koi ot tiah popada, kato v sushtoto vreme izchisliava

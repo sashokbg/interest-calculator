@@ -1,6 +1,4 @@
-package userInterface;
-
-import instrumenti.Numbers;
+package bg.alexander.lihva.userInterface;
 
 import java.awt.Insets;
 import java.util.Collections;
@@ -10,8 +8,9 @@ import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
-import masiv.Record;
-import masiv.Search;
+import bg.alexander.lihva.instrumenti.Numbers;
+import bg.alexander.lihva.masiv.Record;
+import bg.alexander.lihva.masiv.Search;
 
 public class ResultWindow extends JFrame{
 	

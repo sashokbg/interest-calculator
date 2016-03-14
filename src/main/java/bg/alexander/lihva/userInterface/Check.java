@@ -1,6 +1,4 @@
-package userInterface;
-
-import instrumenti.CheckDate;
+package bg.alexander.lihva.userInterface;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -9,6 +7,8 @@ import java.util.Date;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+
+import bg.alexander.lihva.instrumenti.CheckDate;
 
 public class Check {
 	private JFrame window;

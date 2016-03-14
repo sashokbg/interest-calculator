@@ -1,11 +1,9 @@
-package masiv;
-
-import instrumenti.DateDifference;
-import instrumenti.Numbers;
+package bg.alexander.lihva.masiv;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -13,6 +11,9 @@ import java.util.Date;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
+
+import bg.alexander.lihva.instrumenti.DateDifference;
+import bg.alexander.lihva.instrumenti.Numbers;
 
 /**
  * Class ReadMasiv se izpolzva za prochitane da daden masiv. Metoda getRecords e statichen,
@@ -68,7 +69,6 @@ public class ReadMasiv {
 	}
 	
 	public static ArrayList<Record> getRecords(String path) throws FileNotFoundException{
-		// TODO Auto-generated method stub
 		f = new FileInputStream(path);
 		Scanner scan = new Scanner(f);
 		SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
@@ -85,7 +85,6 @@ public class ReadMasiv {
 				D1 = formatter.parse(scan.next());
 				D2 = formatter.parse(scan.next());
 			} catch (ParseException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			
@@ -100,8 +99,8 @@ public class ReadMasiv {
 		}
 		try {
 			f.close();
+			scan.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return records;

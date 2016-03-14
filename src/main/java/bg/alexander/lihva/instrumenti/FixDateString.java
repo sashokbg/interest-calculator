@@ -1,4 +1,4 @@
-package instrumenti;
+package bg.alexander.lihva.instrumenti;
 
 
 /**
